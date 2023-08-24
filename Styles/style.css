@@ -101,11 +101,4 @@ body{
     font-size: 14px;
     color: var(--Dark-grayish-blue);
 }
-@media(min-width:760px){
-    .data span:nth-child(1){
-        color:red;
-    }
-    .stat>div:nth-child(3){
-        display: none;
-    }
-}
+

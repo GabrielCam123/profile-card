@@ -1,0 +1,101 @@
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --Font-size:('Kumbh Sans', sans-serif):18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-pattern-bottom.svg);
+    background-color: #29a5af;
+}
+.card{
+    /*width: 92%;
+    border-radius: 10px;
+    overflow: hidden;*/
+    position: relative;
+    top: 30vh;
+    width: 400px;
+    /* MODIFICACIÓN EN LA ALTURA PARA QUE QUEDE IGUAL */
+    height: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card__header {
+    position: relative;
+    height: 120px;
+    text-align: center;
+  }
+  
+.card__header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+}    
+.card__header-profile {
+    position: absolute;
+    top: 90px;
+    left: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: #fff;
+}
+.image-profile{
+    border-radius: 100px;
+    border: 4px solid white;
+}
+.description{
+    top: 200px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data span:first-child(1){
+    font-weight: 700;
+    font-size: var(--Font-size);
+}
+.data span:nth-child(2){
+    font-weight: 700;
+    color: var(--Dark-grayish-blue);
+    font-size:var(--Font-size);
+}
+.description span:nth-child(2){
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    font-size: var(--Font-size);
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+}
+.stat>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stat>div span:nth-child(1){
+    font-weight: 700;
+    font-size: var(--Font-size);
+}
+.stat>div span:nth-child(2){
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+}

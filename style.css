@@ -24,10 +24,10 @@ body{
     border-radius: 10px;
     overflow: hidden;*/
     position: relative;
-    top: 30vh;
+    top: 5vh;
     width: 400px;
     /* MODIFICACIÓN EN LA ALTURA PARA QUE QUEDE IGUAL */
-    height: 425px;
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
@@ -49,7 +49,7 @@ body{
 .card__header-profile {
     position: absolute;
     top: 90px;
-    left: 150px;
+    left:145px;
     border-radius: 50%;
     border: 5px solid #fff;
     background-color: #fff;
@@ -59,15 +59,15 @@ body{
     border: 4px solid white;
 }
 .description{
-    top: 200px;
+    top: 300px;
     width: 100%;
     height: 100px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 }
-.data span:first-child(1){
+.data span:nth-child(1){
     font-weight: 700;
     font-size: var(--Font-size);
 }
@@ -83,7 +83,8 @@ body{
 }
 .stat{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 6%;
 }
 .stat>div{
     display: flex;
